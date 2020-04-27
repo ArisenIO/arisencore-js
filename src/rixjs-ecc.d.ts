@@ -1,1 +1,1 @@
-declare module "rixjs-ecc";
+declare module "arisenjs-ecc";

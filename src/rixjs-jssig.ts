@@ -3,7 +3,7 @@
  */
 // copyright defined in rixjs/LICENSE.txt
 
-import * as ecc from 'rixjs-ecc';
+import * as ecc from 'arisenjs-ecc';
 import { SignatureProvider, SignatureProviderArgs } from './rixjs-api-interfaces';
 import { convertLegacyPublicKey } from './rixjs-numeric';
 

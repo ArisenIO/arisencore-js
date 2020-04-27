@@ -1,4 +1,4 @@
-import * as ecc from 'rixjs-ecc';
+import * as ecc from 'arisenjs-ecc';
 import { JsSignatureProvider } from '../rixjs-jssig';
 
 describe('JsSignatureProvider', () => {
