@@ -8,11 +8,11 @@ Documentation can be found [here](https://arisen.github.io/rixjs)
 
 ### NPM
 
-The official distribution package can be found at [npm](https://www.npmjs.com/package/rixjs).
+The official distribution package can be found at [npm](https://www.npmjs.com/package/@arisencore/js).
 
 ### Add dependency to your project
 
-`yarn add rixjs`
+`yarn add @arisencore/js`
 
 ### Browser Distribution
 
@@ -24,16 +24,16 @@ Clone this repository locally then run `yarn build-web`.  The browser distributi
 
 Importing using ESM syntax is supported using TypeScript, [webpack](https://webpack.js.org/api/module-methods), or  [Node.js with `--experimental-modules` flag](https://nodejs.org/api/esm.html)
 ```js
-import { Api, JsonRpc, RpcError } from 'rixjs';
-import { JsSignatureProvider } from 'rixjs/dist/rixjs-jssig';           // development only
+import { Api, JsonRpc, RpcError } from '@arisencore/js';
+import { JsSignatureProvider } from '@arisencore/js/dist/rixjs-jssig';           // development only
 ```
 
 ### CommonJS
 
 Importing using commonJS syntax is supported by Node.js out of the box.
 ```js
-const { Api, JsonRpc, RpcError } = require('rixjs');
-const { JsSignatureProvider } = require('rixjs/dist/rixjs-jssig');      // development only
+const { Api, JsonRpc, RpcError } = require('@arisencore/js');
+const { JsSignatureProvider } = require('@arisencore/js/dist/rixjs-jssig');      // development only
 const fetch = require('node-fetch');                                    // node only; not needed in browsers
 const { TextEncoder, TextDecoder } = require('util');                   // node only; native TextEncoder/Decoder
 const { TextEncoder, TextDecoder } = require('text-encoding');          // React Native, IE11, and Edge Browsers only
@@ -56,7 +56,7 @@ const signatureProvider = new JsSignatureProvider([defaultPrivateKey]);
 
 Open a connection to JSON-RPC, include `fetch` when on Node.js.
 ```js
-const rpc = new JsonRpc('http://127.0.0.1:8888', { fetch });
+const rpc = new JsonRpc('https://greatchains.arisennodes.io', { fetch });
 ```
 
 ### API
