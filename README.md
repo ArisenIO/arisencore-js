@@ -1,4 +1,4 @@
-# rixjs ![npm](https://img.shields.io/npm/dw/rixjs.svg)
+# @arisencore/js ![npm](https://img.shields.io/npm/dw/rixjs.svg)
 
 Javascript API for integration with ARISEN-based blockchains using [ARISEN RPC API](https://docs.arisen.network/).
 
